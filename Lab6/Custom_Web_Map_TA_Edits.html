@@ -87,7 +87,7 @@
         info.addTo(map);
 
         // Fetch GeoJSON data and add it to the map
-        fetch('https://raw.github.tamu.edu/TAMU-GEOG-678-WebGIS/Content/master/labs/tamubuildings.js?token=GHSAT0AAAAAAAAAMRTM2GYRRMV7R5KN3LH4ZQEG7QA')
+        fetch('https://raw.githubusercontent.com/tamu-edu-students/GEOG-MackenziePortie-GEOG478/main/Lab6/tamubuildings.geojson')
             .then(response => response.text())
             .then(text => {
                 const jsonText = text.substring(text.indexOf('{'), text.lastIndexOf('}') + 1);
