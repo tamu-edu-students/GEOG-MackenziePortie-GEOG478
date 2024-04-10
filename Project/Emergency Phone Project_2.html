@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Campus Emergency Response Project</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-top {
+  background-color: #500000; /* color of header */
+}
+.center-image {
+  text-align: center;
+}
+
+.center-image img {
+  max-width: 50%;
+  height: auto; 
+}
+
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+.tab {
+  overflow: hidden;
+  border: 1px solid #500000; 
+  background-color: #500000; 
+}
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: #fff; 
+}
+.tab button:hover {
+  background-color: #ddd;
+}
+.tab button.active {
+  background-color: #ccc;
+}
+.tabcontent {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: #f1f1f1;
+  margin-top: 50px; 
+}
+.header-content {
+  text-align: center;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #500000;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large tab">
+    <button class="w3-bar-item w3-button tablinks" onclick="openTab(event, 'Background')" id="defaultOpen">Background</button>
+    <button class="w3-bar-item w3-button tablinks" onclick="openTab(event, 'StudyArea')">Study Area</button>
+    <button class="w3-bar-item w3-button tablinks" onclick="openTab(event, 'Crime')">Crime Awareness</button>
+    <button class="w3-bar-item w3-button tablinks" onclick="openTab(event, 'WebMap')">Interactive Web Map</button>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://urldefense.com/v3/__https://drive.google.com/file/d/1nlcXqQLLACtI23628eYDz9XVwFMzv4uh/view?usp=sharing__;!!KwNVnqRv!AszD2Lvx71ygie8cGqG5O1PJK07Xqgj_QTrf8QPcu89I9vhGri9CKPHTkXCo73pceXDBVne3QvwJgptFZw$">Study Area Map</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://crimegrade.org/safest-places-in-college-station-tx/">Crime in CSTAT</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://arcgis.com/apps/webappviewer/index.html?id=dc5c26f2db874fd0a9256d04dcf3b5e7">Full Interactivity - Web Map</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Header Section -->
+<div id="Header" style="display:block; border: 1px solid #ddd; padding: 70px;">
+  <div class="header-content">
+    <h1>Campus Emergency Response Project</h1>
+    <h4>Alex Aquino, Roberto Duran, Nichole Mendez, Mackenzie Portie, & Destiny Sanchez</h4>
+  </div>
+</div>
+
+<!-- Menu Page with Image -->
+<div id="Menu" class="tabcontent" style="display:block">
+  <!-- Center the image -->
+  <div class="center-image">
+    <img src= "https://www.tamu.edu/_files/images/student-life/tamu-blue-light-emergency-phone.jpg" alt="TAMU Blue Light Emergency Phone">
+  </div>
+  <!-- End of center-image div -->
+</div>
+<!-- End of Menu Page -->
+
+  <!-- Background Section -->
+  <div id="Background" class="tabcontent">
+    <h2>Background</h2>
+    <p>Our group located some of the Blue Light Emergency phones on the Texas A&M University (TAMU) main campus. We created this webpage to include information on these phone systems such as the study area, crime awareness, and an interactive web map. This project aims to improve campus safety, provide accessibility, and promote emergency preparedness. </p>
+    <ul>
+      <li>How were the locations picked?</li>
+        <ol>The emergency phones were strategically distributed throughout campus, focusing on locations easily accessible to students, faculty, staff, and visitors. These locations include not just outside of most buildings on campus, but in parking garages as well. </ol>
+      <li>Why are these emergency phones placed on campus?</li>
+        <ol>The emergency phones allow users to have immediate contact with the 911 system. The phones can also be used for non-emergency situations, such as asking for a campus escort. </ol>
+      <li>How do they work?</li>
+        <ol>There are instructions located on the phone that should be followed in the case of an emergency. Once the phone is activated the University Police is able to access your location, knowing exactly where you are. Through the speaker on the phone, you can communicate directly with the dispatcher. </ol>
+    </ul>
+    <a href="#" class="w3-button w3-black">Go Back to Menu</a>
+  </div>
+
+  <!-- Study Area Section -->
+  <div id="StudyArea" class="tabcontent">
+    <h2>Study Area</h2>
+    <p>We excluded the phones that are located near the Engineering Complex/Northside Recreational Center and Corp/Southside dorms.
+    <h3>Limitations:</h3>
+      <li>Time</li>
+      <li>Number of group members collecting data to phone ratio = 5:115</li>
+      <li>It is also important to note that we are human and therefore may have missed some of the phones we planned on collecting in each of the areas we did.</li>
+        <ol>1. Alex - Collected data near Aggie Park & Kyle Field</ol>
+        <ol>2. & 3. Roberto and Destiny - Collected data near the Northside Dorms</ol>
+        <ol>4. Nichole - Collected data near the Academic Plaza, Simpson Drill Field, & Memorial Student Center (MSC)</ol>
+        <ol>5. Mackenzie - Collected data near Oceanography & Meterology Bulding (OMB)</ol>
+        <a href="#" class="w3-button w3-black">Go Back to Menu</a>
+  </div>
+
+  <!-- Crime Section -->
+  <div id="Crime" class="tabcontent">
+    <h2>Crime Awareness</h2>
+    <p>Information about crime in College Station, Texas (CSTAT).</p>
+    <ul>
+      <li>Crime Rate is higher than average in the city of College Station, it ranks in the 18th percentile for safety alone in the United States. </li>
+      <li>In addition, approximately 54 per 1000 residents are involved in a crime situation:</li>
+      <br>
+      <li>Property crimes are most common with a theft rate of approximately 19 crimes per 1000 residents.</li>
+      <li>Violent crimes on the other hand are less likely, but still higher than the standard average in the nation:</li>
+            <ol>Assault rate is approximately 3 per 1000 residents</ol>
+            <ol>Robbery rate is approximately 2 per 1000 residents</ol>
+            <ol>Rape rate is approximately 1 per 1000 residents</ol>
+            <ol>Murder rate approximately .0450% chance</ol>
+      <br>
+      <b>***For more information regarding crime in College Station, please click on the link in the menu.***</b>
+      <a href="#" class="w3-button w3-black">Go Back to Menu</a>
+  </div>
+
+  <!-- Web Map Section -->
+  <div id="WebMap" class="tabcontent">
+    <h2>Interactive Web Map</h2>
+    <p>Information about the map below:</p>
+      <ul>
+      <li><u>Purpose-</u> Our web map serves to provide easy accessibility and improve campus safety. </li>
+      <li><u>Data Source-</u> The data displayed was publicly collected by our group. </li>
+      <li><u>Features-</u> The emergency phones located around campus are mapped with distinguishable symbols along with the university police and nearby urgent care centers/hospitals. </li>
+      <li><u>Interactivity-</u> Users can click on any of the emergency phones and a popup will appear that provides information of the nearest building along with a photo of that specific phone. </li>
+      <li><u>Usage-</u> This web map is intended for students, faculty, and staff of TAMU as well as residents of College Station, TX.</li>
+      <br>
+      <b>***Please click on <u>"View larger map"</u> at the bottom of the screen in blue (link) or click on "Full Interactivity - Web Map" in the menu in order to utilize all of the interactivity that the map offers or if the symbols are not showing up.***</b>
+    </ul>
+    <a href="#" class="w3-button w3-black">Go Back to Menu</a>
+    <br>
+    <style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><small><a href="https://urldefense.com/v3/__https://arcgis.com/apps/webappviewer/index.html?id=dc5c26f2db874fd0a9256d04dcf3b5e7__;!!KwNVnqRv!CVPZJtuJbCG3A3Eum1XU1wNe_k_j6YpkRj_rZk2h5pqEfZujNPQifb5GZqeFBNQQktn13Krh8Oei2UkV04-2s7nbDV108w$" style="color:#0000FF;text-align:left" target="_blank">View larger map</a></small><br><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Emergency Phones Locator Project" src="https://arcgis.com/apps/webappviewer/index.html?id=dc5c26f2db874fd0a9256d04dcf3b5e7"></iframe></div>
+  </div>
+
+  <div class="footer"></div>
+
+</div>
+
+<script> // javascript
+function w3_open() {
+  if (document.getElementById("mySidebar").style.display === 'block') {
+    document.getElementById("mySidebar").style.display = 'none';
+    document.getElementById("myOverlay").style.display = "none";
+  } else {
+    document.getElementById("mySidebar").style.display = 'block';
+    document.getElementById("myOverlay").style.display = "block";
+  }
+}
+
+function w3_close()
+  document.getElementById("mySidebar")
+</script>
+   
+<script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+</html>
